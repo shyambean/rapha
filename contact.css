@@ -1,0 +1,14 @@
+h2{
+    color: blue;
+    border-style: double;
+}
+body{
+    color: rgb(236, 228, 227);
+    background-image: url(body.jpg);
+    font-size: 25px;
+    background-size: cover;
+}
+
+h3{
+    color: #ff7200;
+}

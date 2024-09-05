@@ -1,0 +1,18 @@
+h1{
+    font-size: 50px;
+    position: center;
+    top: 50px;
+    left: 400px;
+    border-style: dotted;
+}
+h2{
+    color: rgb(9, 198, 25);
+    
+}
+body{
+    background-image: url(abt.jpg);
+    background-size: cover;
+}
+p{
+    color: white;
+}

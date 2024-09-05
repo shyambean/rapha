@@ -3,49 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsiv dropdown menu</title>
-    <!--custom css file link -->
+    <title>Multi page website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+    <link a href="about.html">
+    <link a href="home.html">
+    <link a href="course.html">
+    <link a href="location.html">
+    <link a href="contact.html">
+
 
 </head>
 <body>
-    <header>
-        <a href="#" class="rapha">RAPHA</a>
-        <input type="checkbox"
-id="menu-bar">
-<label for="menu-bar">menu</label>
-        <nav class="navbar">
+    
+    <section class="header">
+        
+    <nav>
+        <a href="index.html"><img src="logo.jpg.jpg"><br><img src="itlogo.jpg" width="10%"></a> 
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="#">home</a>
-                <ul>
-                    <li><a href="#">We exist to Rapha Nepal & the world</a></li>
-                </ul></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">pages +</a>
-                <ul>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">services</a>
-                    <ul>
-                        <li><a href="#">html</a></li>
-                        <li><a href="#">css</a></li>
-                        <li><a href="#">javascript</a></li>
-                    </ul>
-                </li>
-                </ul>
-            </li>
-                <li><a href="#">rerview</a></li>
-                <li><a href="#">gallery +</a>
-                <ul>
-                    <li><a href="#">grid gallery</a></li>
-                    <li><a href="#">flex gallery</a></li>
-                </ul>
-            </li>
-                <li><a href="#">contact</a>
-                <ul>
-                    <li><a href="#">Shyam 9841750175</a></li>
-                </ul></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
             </ul>
+
+        </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-    </header>
+        <div class="text-box">
+            <h1>Nepal's Biggest Institute</h1>
+            <p>Making website is now one of the easiest thing in the world. <br>
+            You just need to learn HTMl,CSS, Javascript and Python you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+    <!------ Course ------>
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>HTMl,CSS, Javascript and Python, You are always welcome to our Rapha IT center.</p>
+
+        <div class="row">
+            <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Learn how to meke a complete website using HTMML and CSS.</p>
+            </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Learn how to meke a complete website using HTMML and CSS.</p>
+            </div>
+        <div class="course-col">
+            <h3>Post graduation</h3>
+            <p>Learn how to meke a complete website using HTMML and CSS.</p>
+            </div>
+         </div>
+
+    </section>
+
+    <!-----Institute------>
+    <section class="Institute">
+        <h1>Our Rapha IT Center</h1>
+        <p>"We exist to rapha Nepal and the world."</p>
+
+        <div class="row">
+            <div class="institute-col">
+            <img src="ktmb.jpg">
+            <div class="layer">
+            <h3>Kathmandu</h3>
+            </div>
+            </div>
+        <div class="institute-col">
+            <img src="lalita.jpg">
+            <div class="layer">
+            <h3>Lalitpur</h3>
+            </div>
+            </div>
+        <div class="institute-col">
+            <img src="bhakta.jpg">
+            <div class="layer">
+            <h3>Bhaktapur</h3>
+            </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----Facilities------>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Free using laptop and free wifi and more.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+            <img src="libr.jpg">
+            <h3>World Class Library</h3>
+            <P>Libraries are community hubs. They connect people to information and connect people to people. </P>
+            </div>
+        <div class="facilities-col">
+            <img src="basketball.jpg">
+            <h3>World Class Basketball</h3>
+            P>Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball. </P>
+            </div>
+        <div class="facilities-col">
+            <img src="cafe.jpg">
+            <h3>World Class Cafeteria</h3>
+            <P>A café is a type of restaurant which typically serves coffee and tea, in addition to light refreshments such as baked goods or snacks.  </P>
+            </div>
+            </div>
+    </section>
+
+    <!-----testimonials----->
+    <section class="testimonials">
+        <h1> What Our students says</h1>
+        <p>We trust Rapha IT center. We are satisfy with Rapha IT center.</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+            <img src="smiyap.jpg.jpg" width="45%" height="30%">
+            <div>
+            <p> Rapha IT has helped to rekindle my interest in programming. It has been a fun experience trying out different new things with everyone. It is exciting and fun discovering how programming works and the results  brings total satisfaction. </p>
+            <h3>Smiya Paija</h3>
+                
+        </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="michelle.jpg.jpg" width="45%" height="30%">
+            <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At molestias enim placeat. Vitae </p>
+            <h3>Michelle Tamang</h3> 
+        </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="hospic.jpg.jpg" width="45%" height="30%">
+            <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At molestias enim placeat. Vitae </p>
+            <h3>Hospic Tamang</h3> 
+        </div>
+        </div>  
+
+    </section>
+    <!-----Call to action----->
+    <section class="cta">
+        <h1>Enroll for our various courses <br>anywhere from the world.</h1>
+        <a href="" class="hero-btn">Shyam 9841750175</a>
+    </section>
+
+    <!-----Footer----->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are ready in Bhaisepati help you learn coding. Are you ready?</p>
+
+    </section>
+
+
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
 </body>
 </html>
